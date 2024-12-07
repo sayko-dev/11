@@ -15,7 +15,12 @@
         <a href="https://wa.me/0599526992" class="fixed-message" target="_blank">تحتاج مساعدة؟</a>
     </div>
     <header>
-        <a href="#" class="btn" id="loginBtn">تسجيل الدخول</a>
+<!-- زر فتح Popup الدفع -->
+<a href="javascript:void(0);" class="open-popup-btn btn" onclick="openPaymentPopup()">الدفع</a>
+
+<!-- زر فتح Popup تسجيل الدخول -->
+<a href="javascript:void(0);" class="open-popup-btn btn" onclick="openLoginPopup()">تسجيل الدخول</a>
+
         <div class="search-container">
             <input type="text" id="search" placeholder="ابحث عن خدمة.">
         </div>
@@ -165,49 +170,70 @@
 
     <hr>
 
-    <!-- قسم  تنسيق الزهور -->
-    <section id="donations">
-        <h2> تنسيق الزهور</h2>
+    <h2 class="h2">الاقسام</h2>
+    <a href="">تعرف على المزيد</a>
+    <section class="services-section">
         <div class="service">
-            <img src="photos/y.jpg" alt="عرض">
-            <p>ساهم في العرض لمساعدة الأسر المحتاجة.</p>
-            <a href="#donation-details" class="btn">عرض التفاصيل</a>
+            <img src="photos/قاعات الزفاف.jpg" alt="قاعات الزفاف">
+            <p>قاعات الزفاف</p>
+            <a href="#" class="btn">اعرف المزيد</a>
         </div>
-    </section>
-    
-    <!-- قسم تجهيز الحلويات -->
-    <section id="help">
-        <h2>تجهيز الحلويات</h2>
         <div class="service">
-            <img src="photos/q.png" alt="تجهيز الحلويات">
-            <p>انضم إلينا في تقديم المساعدة للمحتاجين.</p>
-            <a href="#help-details" class="btn">عرض التفاصيل</a>
+            <img src="photos/الحفلات.jpg" alt="تنسيق الحفلات">
+            <p>تنسيق الحفلات</p>
+            <a href="#" class="btn">اعرف المزيد</a>
         </div>
-    </section>
-    
-    <!-- قسم زينة الحفلات -->
-    <section id="volunteers">
-        <h2>زينة الحفلات</h2>
         <div class="service">
-            <img src="photos/i.png" alt="زينة الحفلات">
-            <p>كن جزءًا من فريق المتطوعين وشارك في الأعمال الخيرية.</p>
-            <a href="#volunteer-details" class="btn">عرض التفاصيل</a>
+            <img src="photos/الصوتيات والإضاءة.jpg" alt="الصوتيات والإضاءة">
+            <p>الصوتيات والإضاءة</p>
+            <a href="#" class="btn">اعرف المزيد</a>
+        </div>
+        <div class="service">
+            <img src="photos/قسم العروس.lpg.jpg" alt="قسم العروس">
+            <p>قسم العروس</p>
+            <a href="#" class="btn">اعرف المزيد</a>
+        </div>
+        <div class="service">
+            <img src="photos/الفنادق.jpg" alt="حجوزات الفنادق">
+            <p>حجوزات الفنادق</p>
+            <a href="#" class="btn">اعرف المزيد</a>
+        </div>
+        <div class="service">
+            <img src="photos/الضيافة.jpg" alt="الضيافة">
+            <p>الضيافة</p>
+            <a href="#" class="btn">اعرف المزيد</a>
         </div>
     </section>
 
-    <div id="loginModal" class="modal">
-        <div class="modal-content">
-            <span class="close" id="closeModal">&times;</span>
-            <h2>تسجيل الدخول</h2>
-            <form>
-                <label for="username">اسم المستخدم:</label>
-                <input type="text" id="username" name="username" required>
-                <label for="password">كلمة المرور:</label>
-                <input type="password" id="password" name="password" required>
-                <button type="submit" class="btn">تسجيل الدخول</button>
-            </form>
-        </div>
+
+<!-- Popup الدفع -->
+<div id="payment-popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePaymentPopup()">&times;</span>
+        <h2 style="color: #ff4081;">خدمة الدفع</h2>
+        <form class="payment-form">
+            <input type="text" placeholder="اسم حامل البطاقة" required>
+            <input type="text" placeholder="رقم البطاقة" required>
+            <input type="date" placeholder="تاريخ انتهاء البطاقة" required>
+            <input type="text" placeholder="رمز الأمان (CVV)" required>
+            <button type="submit">إتمام الدفع</button>
+        </form>
     </div>
+</div>
+
+<!-- Popup تسجيل الدخول -->
+<div id="login-popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closeLoginPopup()">&times;</span>
+        <h2 style="color: #ff4081;">تسجيل الدخول</h2>
+        <form id="login-form">
+            <input type="email" placeholder="البريد الإلكتروني" required>
+            <input type="password" placeholder="كلمة المرور" required>
+            <button type="submit">دخول</button>
+        </form>
+    </div>
+</div>
+
 
     <footer class="footer">
         <p>حقوق الطبع والنشر © 2023 زغاريد الفرح. جميع الحقوق محفوظة.</p>

@@ -101,3 +101,24 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+
+    // فتح نافذة الدفع
+    function openPaymentPopup() {
+        document.getElementById("payment-popup").style.display = "block";
+    }
+
+    // إغلاق نافذة الدفع
+    function closePaymentPopup() {
+        document.getElementById("payment-popup").style.display = "none";
+    }
+
+    // فتح نافذة تسجيل الدخول
+    function openLoginPopup() {
+        document.getElementById("login-popup").style.display = "block";
+    }
+
+    // إغلاق نافذة تسجيل الدخول
+    function closeLoginPopup() {
+        document.getElementById("login-popup").style.display = "none";
+    }
