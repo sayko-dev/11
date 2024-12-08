@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل الخدمة - تطبيق زغاريد</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="fixed-message">
+        <a href="https://wa.me/0599526992" class="fixed-message" target="_blank">تحتاج مساعدة؟</a>
+    </div>
+    <header>
+<a href="../السلة/index.html" class="open-popup-btn btn">السله</a>
+
+<!-- زر فتح Popup تسجيل الدخول -->
+<a href="javascript:void(0);" class="open-popup-btn btn" onclick="openLoginPopup()">تسجيل الدخول</a>
+
+        <div class="search-container">
+            <input type="text" id="search" placeholder="ابحث عن خدمة.">
+        </div>
+        <a href="../index.html"><img src="logo.png" alt="زغاريد الفرح" class="logo"></a>
+    </header>
+    
+ 
+
+
+    <div class="container">
+        <div class="services-header">
+            <h1>تفاصيل الخدمة</h1>
+            <p>تعرف على تفاصيل الخدمات التي نقدمها في تطبيق زغاريد.</p>
+        </div>
+
+        <div class="service-detail">
+            <div class="service-image">
+                <img src="https://via.placeholder.com/400x250" alt="خدمة تزيين القاعات">
+            </div>
+            <div class="service-info">
+                <div class="service-description">
+                    <h2>تزيين القاعات</h2>
+                    <p>نحن نقدم خدمات تزيين القاعات بأحدث الأساليب المبتكرة، بما في ذلك بوكيهات الورود، تزيين الطاولات، والمداخل، كما نقدم خدمة تزيين السيارات أيضاً. نحن نهتم بتقديم الأفضل لتجعل حفلتك لا تنسى. يعتمد تصميمنا على أذواقكم الخاصة وبالاستعانة بأفضل الخامات وأحدث الصيحات.</p>
+                    
+                    <h3>مزايا الخدمة:</h3>
+                    <ul>
+                        <li>بوكيهات زهور طبيعية وجميلة.</li>
+                        <li>تزيين القاعات باستخدام الإضاءة المميزة.</li>
+                        <li>التنسيق مع فريق عمل متخصص لضمان الدقة في التنفيذ.</li>
+                        <li>خدمة التوصيل للسيارات لتزيينها بأجمل الزهور والديكورات.</li>
+                    </ul>
+
+                    <h3>معلومات إضافية:</h3>
+                    <p>مدة الخدمة: من 3 إلى 5 ساعات</p>
+                    <p>التكلفة: تبدأ من 1000 ريال سعودي حسب حجم القاعة واحتياجات الزينة.</p>
+                    <p>التغطية الجغرافية: الخدمة متوفرة في جميع مناطق المملكة.</p>
+                </div>
+
+                <div class="service-rating">
+                    <h3>التقييم:</h3>
+                    <div class="stars">
+                        <span>⭐⭐⭐⭐⭐</span> <!-- يمكن إضافة نظام ديناميكي للتقييمات -->
+                        <p> 5 5 تقييمات</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btnn">     <button class="btn" onclick="addToCart(3, 'منتج جديد', 150)">أضف إلى السلة</button>
+        </div>
+    </div>
+
+    <!-- Popup تسجيل الدخول -->
+<div id="login-popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closeLoginPopup()">&times;</span>
+        <h2 style="color: #ff4081;">تسجيل الدخول</h2>
+        <form id="login-form">
+            <input type="email" placeholder="البريد الإلكتروني" required>
+            <input type="password" placeholder="كلمة المرور" required>
+            <button type="submit">دخول</button>
+        </form>
+    </div>
+</div>
+
+
+    <footer class="footer">
+        <p>حقوق الطبع والنشر © 2023 زغاريد الفرح. جميع الحقوق محفوظة.</p>
+    </footer>
+    <script src="js.js"></script>
+</body>
+</html>

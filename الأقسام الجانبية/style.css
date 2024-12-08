@@ -1,17 +1,59 @@
-/* الأساسيات */
-* {
+/* تخصيص الخط */
+body {
+    background-color: #121212;
+    color: white;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: "Tajawal", sans-serif;
 }
 
-/* تخصيص اللون العام */
-body {
-    background-color: #222222;
-    color: #f5f5f5;
-    font-size: 16px;
-    line-height: 1.6;
+*{
+    font-family: 'Tajawal', sans-serif;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    top: 300px;
+    position: absolute;
+}
+
+.section {
+    background-color: #c91d56; /* اللون الوردي */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+    background-color: #89173d; /* لون وردي أغمق عند المرور */
+}
+
+/* تخصيص الأسلوب للخط */
+h1, p {
+    font-family: 'Tajawal', sans-serif;
+}
+
+
+.section img {
+    width: 150px; 
+    height: auto; 
+    border-radius: 8px;
 }
 
 /* الهيدر */
@@ -97,237 +139,6 @@ nav ul li a:hover {
     color: #ff4081;
 }
 
-/**/
-.hero {
-    background-image: url('photos/الشتاء.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #f5f5f5;
-    position: relative;
-
-}
-
-.center-container {
-    text-align: right; 
-    position: absolute;
-    top: 60%;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-}
-
-.container {
-    display: flex;
-    text-align: right;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #222222;
-    width: 80%;
-    max-width: 80%;
-    height: 200px;
-
-}
-
-.textt {
-    flex-grow: 1;
-    margin-right: auto; 
-    display: block;
-    position: relative;
-    top: 0;
-}
-
-.select-dropdown {
-    height: 40%;
-    top: 50%;
-    padding: 10px;
-    border-radius: 500px;
-    border: 1px solid #007BFF;
-    margin-right: 10px; /* إضافة مسافة بين الزر والقائمة */
-    background-color: #fff;
-    color: #000;
-    font-size: larger;
-    cursor: pointer;
-    position: relative;
-    left: 20%;
-    
-}
-
-.select-dropdown:focus {
-    outline: none; 
-    border-color: #0056b3; 
-}
-
-.select-dropdown option {
-    background-color: #fff; 
-    color: #000;
-}
-
-.buttonn {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 500px;
-    cursor: pointer;
-    font-size: larger;
-    height: 40%;
-    top: 30%;
-    position: relative
-    
-}
-
-.buttonn:hover {
-    background-color: #0056b3;
-}
-
-
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 أعمدة */
-    gap: 10px;
-    max-width: 1200px;
-    margin: 20px auto;
-}
-.gallery-item {
-    text-align: center;
-    overflow: hidden; 
-    position: relative;
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-.gallery img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 5px;
-    transition: transform 0.3s ease; 
-}
-.gallery img:hover {
-    transform: scale(1.1);
-}
-.image-name {
-    margin: 10px 0 5px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #ffffff;
-}
-.image-number {
-    color: #ffffff;
-}
-
-.load-more {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #00000000;
-    color: white;
-    text-align: center;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    width: fit-content;
-}
-.load-more:hover {
-    background-color: #2b2b2b37;
-}
-.hidden {
-    display: none; /* لإخفاء الصفوف الإضافية */
-}
-/* الأقسام المختلفة */
-section {
-    padding: 40px 20px;
-    margin: 30px 0;
-}
-
-section h2, .h2 {
-    color: #ff4081;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    font-weight: bold;
-    direction: rtl;
-    text-align: center;
-}
-
-.service, .provider {
-    background-color: #333333;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 30px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service img, .provider img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    max-height: 280px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.service:hover, .provider:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
-}
-
-.service img:hover, .provider img:hover {
-    transform: scale(1.05);
-}
-
-.service p, .provider p {
-    font-size: 1.2em;
-    margin: 15px 0;
-}
-
-.service .btn, .provider .btn {
-    background-color: #ff4081;
-    color: white;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 8px;
-    display: inline-block;
-    margin-top: 15px;
-    transition: background-color 0.3s ease;
-}
-
-.service .btn:hover, .provider .btn:hover {
-    background-color: #e7376d;
-}
-
-/* نموذج الحجز */
-form input, form select, form button {
-    width: 100%;
-    padding: 12px;
-    margin: 15px 0;
-    border-radius: 8px;
-    border: 1px solid #444444;
-    background-color: #222222;
-    color: #f5f5f5;
-}
-
-form input::placeholder, form select {
-    color: #888;
-}
-
-form button {
-    background-color: #ff4081;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-form button:hover {
-    background-color: #e7376d;
-}
 
 /* صفحة تسجيل الدخول */
 #login form {
@@ -400,12 +211,236 @@ footer {
     text-align: center;
     padding: 20px;
     max-width: 100%;
-    bottom: 0;
+    bottom: -540px;
     font-size: 1.1em;
+    position: relative;
+
 }
 a {
     text-decoration: none;
     color: #ffffff;
+  }
+  
+hr {
+    border: 1px dashed rgb(88, 88, 88);
+  }
+
+  
+.fixed-message {
+    position: fixed;
+    right: 0; 
+    top: 20%;
+    transform: translateY(-50%);
+    background-color: black;
+    color: white; 
+    padding: 10px 15px; 
+    border-radius: 20px; 
+    z-index: 1000; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 14px; 
+    text-decoration: none; 
+    display: flex;
+    align-items: center; 
+}
+
+.fixed-message:hover {
+    background-color: #171717; 
+}
+
+.fixed-message::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px; 
+    background-color: rgb(76, 58, 58); 
+    border-radius: 50%; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* الأساسيات */
+body {
+    font-family: "Tajawal", sans-serif;
+}
+
+/* خلفية الـ Popup */
+.popup {
+    display: none; /* مخفي افتراضيًا */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* خلفية داكنة مع شفافية */
+    text-align: center;
+    padding-top: 60px;
+}
+
+
+/* خلفية الـ Popup */
+.popup {
+    display: none; /* مخفي افتراضيًا */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* خلفية داكنة مع شفافية */
+    text-align: center;
+    padding-top: 60px;
+}
+
+/* محتوى الـ Popup */
+.popup-content {
+    background-color: #222222;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* زر الإغلاق */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: #ff4081;
+}
+
+/* تصميم استمارة الدفع */
+.payment-form input,
+.payment-form select,
+.payment-form button {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: 1px solid #444444;
+    background-color: #222222;
+    color: #f5f5f5;
+}
+
+.payment-form button {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.payment-form button:hover {
+    background-color: #e7376d;
+}
+
+/* تصميم استمارة تسجيل الدخول */
+#login-form input,
+#login-form button {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: 1px solid #444444;
+    background-color: #222222;
+    color: #f5f5f5;
+}
+
+#login-form button {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login-form button:hover {
+    background-color: #e7376d;
+}
+
+
+/* صفحة تسجيل الدخول */
+#login form {
+    background-color: #333333;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 380px;
+    margin: 30px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#login form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);
+}
+
+#login label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #f5f5f5;
+}
+
+#login input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 8px;
+    border: 1px solid #444444;
+    background-color: #222222;
+    color: #f5f5f5;
+}
+
+#login button {
+    background-color: #ff4081;
+    color: white;
+    padding: 12px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login button:hover {
+    background-color: #e7376d;
+}
+
+/* أزرار وسائل التواصل */
+#login button:nth-child(3) {
+    background-color: #3b5998; /* فيسبوك */
+}
+
+#login button:nth-child(4) {
+    background-color: #db4437; /* جوجل */
+}
+
+#login button:nth-child(3):hover {
+    background-color: #2d4373;
+}
+
+#login button:nth-child(4):hover {
+    background-color: #c1351d;
+}
+
+/* التذييل */
+
+a {
+    text-decoration: none;
   }
   
 hr {
@@ -561,50 +596,7 @@ body {
     background-color: #e7376d;
 }
 
-
-/* تخصيص طريقة عرض الخدمات */
-.services-section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* إنشاء 3 أعمدة */
-    gap: 30px; /* إضافة مسافة بين العناصر */
-    padding: 40px 20px;
-    text-align: center;
-    background-color: #222222; /* خلفية داكنة */
-}
-
-.service {
-    background-color: #333333; /* اللون الأسود */
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    max-height: 280px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.service:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
-}
-
-.service img:hover {
-    transform: scale(1.05);
-}
-
-.service p {
-    font-size: 1.2em;
-    margin: 15px 0;
-    color: #f5f5f5; /* لون النص أبيض */
-}
-
-.service .btn {
+.section .btn {
     background-color: #ff4081; /* لون الزر */
     color: white;
     padding: 12px 25px;
@@ -615,6 +607,6 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.service .btn:hover {
+.section .btn:hover {
     background-color: #e7376d;
 }

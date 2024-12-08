@@ -62,13 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // التعامل مع زر "احجز الآن" على صفحة الخدمة
-    const bookButtons = document.querySelectorAll('.service .btn, .provider .btn');
-    bookButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-            alert('تم إضافة الخدمة إلى سلة الحجز!');
-        });
-    });
+
 });
 
 

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سلة المشتريات</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fixed-message">
+        <a href="https://wa.me/0599526992" class="fixed-message" target="_blank">تحتاج مساعدة؟</a>
+    </div>
+    <header>
+<a href="#top" class="open-popup-btn btn">السله</a>
+
+<!-- زر فتح Popup تسجيل الدخول -->
+<a href="javascript:void(0);" class="open-popup-btn btn" onclick="openLoginPopup()">تسجيل الدخول</a>
+
+        <div class="search-container">
+            <input type="text" id="search" placeholder="ابحث عن خدمة.">
+        </div>
+        <a href="../index.html"><img src="logo.png" alt="زغاريد الفرح" class="logo"></a>
+    </header>
+    
+ 
+    
+    <div class="container">
+        <h2>سلة المشتريات</h2>
+        <div class="cart">
+            <div id="cart-items">
+                <!-- المنتجات المضافة ستظهر هنا -->
+            </div>
+            <div class="cart-summary">
+                <p>إجمالي السلة: <span id="total-price">0</span> ريال سعودي</p>
+                <a href="javascript:void(0);" id="checkout-btn" class="open-popup-btn btn" onclick="openPaymentPopup()">الدفع</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup الدفع -->
+<div id="payment-popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePaymentPopup()">&times;</span>
+        <h2 style="color: #ff4081;">خدمة الدفع</h2>
+        <form class="payment-form">
+            <input type="text" placeholder="اسم حامل البطاقة" required>
+            <input type="text" placeholder="رقم البطاقة" required>
+            <input type="date" placeholder="تاريخ انتهاء البطاقة" required>
+            <input type="text" placeholder="رمز الأمان (CVV)" required>
+            <button type="submit">إتمام الدفع</button>
+        </form>
+    </div>
+</div>
+
+<!-- Popup تسجيل الدخول -->
+<div id="login-popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closeLoginPopup()">&times;</span>
+        <h2 style="color: #ff4081;">تسجيل الدخول</h2>
+        <form id="login-form">
+            <input type="email" placeholder="البريد الإلكتروني" required>
+            <input type="password" placeholder="كلمة المرور" required>
+            <button type="submit">دخول</button>
+        </form>
+    </div>
+</div>
+
+
+
+    <script src="js.js"></script>
+</body>
+</html>

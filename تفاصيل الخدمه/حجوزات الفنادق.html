@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل الخدمة - تطبيق زغاريد</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="fixed-message">
+        <a href="https://wa.me/0599526992" class="fixed-message" target="_blank">تحتاج مساعدة؟</a>
+    </div>
+    <header>
+<a href="../السلة/index.html" class="open-popup-btn btn">السله</a>
+
+<!-- زر فتح Popup تسجيل الدخول -->
+<a href="javascript:void(0);" class="open-popup-btn btn" onclick="openLoginPopup()">تسجيل الدخول</a>
+
+        <div class="search-container">
+            <input type="text" id="search" placeholder="ابحث عن خدمة.">
+        </div>
+        <a href="../index.html"><img src="logo.png" alt="زغاريد الفرح" class="logo"></a>
+    </header>
+    
+ 
+
+
+    <div class="container">
+        <div class="service-detail">
+            <div class="service-image">
+                <img src="photos/الفنادق.jpg" alt="حجوزات الفنادق">
+            </div>
+            <div class="service-info">
+                <div class="service-description">
+                    <h2>حجوزات الفنادق</h2>
+                    <p>نقدم لك خدمات حجز الفنادق في أفضل المواقع، مع خيارات تناسب جميع الميزانيات. نحن نساعدك في اختيار الفندق المثالي لإقامة ضيوفك.</p>
+                    
+                    <h3>مزايا الخدمة:</h3>
+                    <ul>
+                        <li>توفير خيارات متنوعة من الفنادق.</li>
+                        <li>أسعار تنافسية وعروض خاصة.</li>
+                        <li>خدمة عملاء متاحة على مدار الساعة.</li>
+                        <li>تسهيل إجراءات الحجز والدفع.</li>
+                    </ul>
+    
+                    <h3>معلومات إضافية:</h3>
+                    <p>مدة الخدمة: حسب الحجز</p>
+                    <p>التكلفة: تبدأ من 300 ريال سعودي حسب الفندق المختار.</p>
+                    <p>التغطية الجغرافية: الخدمة متوفرة في جميع مناطق المملكة.</p>
+                </div>
+    
+                <div class="service-rating">
+                    <h3>التقييم:</h3>
+                    <div class="stars">
+                        <span>⭐⭐⭐⭐⭐</span>
+                        <p> 5 5 تقييمات</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="btnn">
+            <button class="btn" onclick="addToCart(3, 'حجوزات الفنادق', 300)">أضف إلى السلة</button>
+        </div>
+    </div>
+    
+
+    <!-- Popup تسجيل الدخول -->
+<div id="login-popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closeLoginPopup()">&times;</span>
+        <h2 style="color: #ff4081;">تسجيل الدخول</h2>
+        <form id="login-form">
+            <input type="email" placeholder="البريد الإلكتروني" required>
+            <input type="password" placeholder="كلمة المرور" required>
+            <button type="submit">دخول</button>
+        </form>
+    </div>
+</div>
+
+
+    <footer class="footer">
+        <p>حقوق الطبع والنشر © 2023 زغاريد الفرح. جميع الحقوق محفوظة.</p>
+    </footer>
+    <script src="js.js"></script>
+</body>
+</html>

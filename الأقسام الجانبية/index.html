@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأقسام والخدمات في تطبيق زغاريد</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="fixed-message">
+        <a href="https://wa.me/0599526992" class="fixed-message" target="_blank">تحتاج مساعدة؟</a>
+    </div>
+    <header>
+<a href="../السلة/index.html" class="open-popup-btn btn">السله</a>
+
+<!-- زر فتح Popup تسجيل الدخول -->
+<a href="javascript:void(0);" class="open-popup-btn btn" onclick="openLoginPopup()">تسجيل الدخول</a>
+
+        <div class="search-container">
+            <input type="text" id="search" placeholder="ابحث عن خدمة.">
+        </div>
+        <a href="../index.html"><img src="logo.png" alt="زغاريد الفرح" class="logo"></a>
+    </header>
+    
+ 
+
+    <div class="container">
+        <div class="sections">
+            <div class="section">
+                <img src="https://via.placeholder.com/400x250" alt="تنسيق الورود والديكور" />
+                <p>تنسيق الورود والديكور:<br> بوكيهات، تزيين القاعات، والسيارات.</p>
+                <a href="../تفاصيل الخدمه/index.html" class="btn">اعرف المزيد</a>
+
+            </div>
+            <div class="section">
+                <img src="https://via.placeholder.com/400x250" alt="الصوتيات والإضاءة" />
+                <p>الصوتيات والإضاءة:<br> سماعات، أنظمة إضاءة ومؤثرات.</p>
+                <a href="../تفاصيل الخدمه/index.html" class="btn">اعرف المزيد</a>
+
+            </div>
+            <div class="section">
+                <img src="https://via.placeholder.com/400x250" alt="تنظيم الحفلات" />
+                <p>تنظيم الحفلات:<br> تخطيط شامل، إدارة المهر، تنسيق القاعات.</p>
+                <a href="../تفاصيل الخدمه/index.html" class="btn">اعرف المزيد</a>
+
+            </div>
+            <div class="section">
+                <img src="https://via.placeholder.com/400x250" alt="العناية الشخصية" />
+                <p>العناية الشخصية:<br> مكياج، تسريحات، استشارات الألوان.</p>
+                <a href="../تفاصيل الخدمه/index.html" class="btn">اعرف المزيد</a>
+
+            </div>
+            <div class="section">
+                <img src="https://via.placeholder.com/400x250" alt="التصوير" />
+                <p>التصوير:<br> فوتوغرافي وفيديو مع المونتاج.</p>
+                <a href="../تفاصيل الخدمه/index.html" class="btn">اعرف المزيد</a>
+
+            </div>
+            <div class="section">
+                <img src="https://via.placeholder.com/400x250" alt="الإكسسوارات والهدايا" />
+                <p>الإكسسوارات والهدايا:<br> توزيعات وهدايا تذكارية.</p>
+                <a href="../تفاصيل الخدمه/index.html" class="btn">اعرف المزيد</a>
+
+            </div>
+            <div class="section">
+                <img src="https://via.placeholder.com/400x250" alt="التنقل" />
+                <p>التنقل:<br> سيارات للعروسين ونقل الضيوف.</p>
+                <a href="../تفاصيل الخدمه/index.html" class="btn">اعرف المزيد</a>
+
+            </div>
+            <div class="section">
+                <img src="https://via.placeholder.com/400x250" alt="حجوزات الفنادق" />
+                <p>حجوزات الفنادق:<br> إقامة العروسين وتجهيز الغرف.</p>
+                <a href="../تفاصيل الخدمه/index.html" class="btn">اعرف المزيد</a>
+
+            </div>
+            <div class="section">
+                <img src="https://via.placeholder.com/400x250" alt="الملابس الرسمية" />
+                <p>الملابس الرسمية:<br> فساتين زفاف وبدل رجالية.</p>
+                <a href="../تفاصيل الخدمه/index.html" class="btn">اعرف المزيد</a>
+
+            </div>
+            <div class="section">
+                <img src="https://via.placeholder.com/400x250" alt="الضيافة" />
+                <p>الضيافة:<br> بوفيه متكامل ومشروبات.</p>
+                <a href="../تفاصيل الخدمه/index.html" class="btn">اعرف المزيد</a>
+
+            </div>
+            <div class="section">
+                <img src="https://via.placeholder.com/400x250" alt="حجز القاعات" />
+                <p>حجز القاعات:<br> قاعات متنوعة، تجهيزات كاملة حسب الطلب.</p>
+                <a href="../تفاصيل الخدمه/index.html" class="btn">اعرف المزيد</a>
+
+            </div>
+            <div class="section">
+                <img src="https://via.placeholder.com/400x250" alt="حجز القاعات" />
+                <p>حجز القاعات:<br> قاعات متنوعة، تجهيزات كاملة حسب الطلب.</p>
+                <a href="../تفاصيل الخدمه/index.html" class="btn">اعرف المزيد</a>
+
+            </div>
+        </div>
+    </div>
+    <!-- Popup تسجيل الدخول -->
+<div id="login-popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closeLoginPopup()">&times;</span>
+        <h2 style="color: #ff4081;">تسجيل الدخول</h2>
+        <form id="login-form">
+            <input type="email" placeholder="البريد الإلكتروني" required>
+            <input type="password" placeholder="كلمة المرور" required>
+            <button type="submit">دخول</button>
+        </form>
+    </div>
+</div>
+
+
+    <footer class="footer">
+        <p>حقوق الطبع والنشر © 2023 زغاريد الفرح. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>
